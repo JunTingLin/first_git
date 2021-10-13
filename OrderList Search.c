@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//my second copy 
 //{34,23,37,64,12,3}->原數列 
 int locn ;
 int main(void){
-	int A[6] = {3,12,23,34,37,64};
+	int A[6] = {3,12,23,34,37,64,1000,1000};
 	printf("有無找到:%d\n",OrderListSearch(A,5,12));
 	printf("最後在locn=%d的索引\n",locn);
 	system("pause");
