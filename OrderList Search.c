@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+//隨便亂打
 //{34,23,37,64,12,3}->原數列 
 int locn ;
 int main(void){
