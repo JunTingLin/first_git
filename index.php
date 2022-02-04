@@ -1,3 +1,3 @@
 <?php
-    echo "這是測試"; //hihihi
+    echo "這是測試";
 ?>
