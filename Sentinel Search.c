@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-//{34,23,37,64,12,3}->­ì¼Æ¦C 
+//{34,23,37,64,12,3}->åŸæ•¸åˆ— 
 int locn ;
 int main(void){
 	int A[6] = {34,23,37,64,12,3};
-	printf("¦³µL§ä¨ì:%d\n",SeqSearch(A,5,15));
-	printf("³Ì«á¦blocn=%dªº¯Á¤Ş\n",locn);
+	printf("æœ‰ç„¡æ‰¾åˆ°:%d\n",SeqSearch(A,5,15));
+	printf("æœ€å¾Œåœ¨locn=%dçš„ç´¢å¼•\n",locn);
 	system("pause");
 	return 0;
 }
 
-int SeqSearch(int list[], int lastIndex, int target){  //list[]¨S¦³¼g¦º¤j¤p¡A©Ò¥H¤U­±¥i¥H¦A©µ¦ù¤@®æ 
-	list[lastIndex+1]= target;  //ª½±µ§â³Ì«á¤@­Ó­È3§ï¦¨target 
+int SeqSearch(int list[], int lastIndex, int target){  //list[]æ²’æœ‰å¯«æ­»å¤§å°ï¼Œæ‰€ä»¥ä¸‹é¢å¯ä»¥å†å»¶ä¼¸ä¸€æ ¼ 
+	list[lastIndex+1]= target;  //ç›´æ¥æŠŠæœ€å¾Œä¸€å€‹å€¼3æ”¹æˆtarget 
 	int looker = 0;
 	while(target != list[looker]){
 		looker = looker+1;
@@ -22,7 +22,7 @@ int SeqSearch(int list[], int lastIndex, int target){  //list[]¨S¦³¼g¦º¤j¤p¡A©Ò¥
 		return 1;
 	}
 	else{
-		locn = lastIndex;  //¦¹®Élooker·|¬O6¡Alocn­n¦sªº¬Olast 5 
+		locn = lastIndex;  //æ­¤æ™‚lookeræœƒæ˜¯6ï¼Œlocnè¦å­˜çš„æ˜¯last 5 
 		return 0;
 	}
 	

@@ -6,8 +6,8 @@ int main(void){
 	int i=1;
 	int A[6] = {34,23,37,64,12,3};
 	for(i=1;i<=5;i++){
-		printf("¦³µL§ä¨ì:%d\n",ProbabilitySearch(A,5,3));
-		printf("³Ì«á¦blocn=%dªº¯Á¤Ş\n",locn);
+		printf("æœ‰ç„¡æ‰¾åˆ°:%d\n",ProbabilitySearch(A,5,3));
+		printf("æœ€å¾Œåœ¨locn=%dçš„ç´¢å¼•\n",locn);
 		show(A);
 	}
 	system("pause");
@@ -19,18 +19,18 @@ int ProbabilitySearch(int list[], int lastIndex, int target){
 		looker = looker+1;
 	}
 	if(target == list[looker]){
-		if(looker>0){ //¬O²Ä¤@­Ó¤¸¯À¤§«áªº¡A´N­n©¹«e·h
+		if(looker>0){ //æ˜¯ç¬¬ä¸€å€‹å…ƒç´ ä¹‹å¾Œçš„ï¼Œå°±è¦å¾€å‰æ¬
 			int temp = list[looker-1];
 			list[looker-1] = list[looker];
 			list[looker] = temp;
-			looker = looker - 1; //«ü¼Ğlooker¦A©¹«e«ü¡A¤~¬O§Ú­Ì­è­è§ä¨ìªº­È
+			looker = looker - 1; //æŒ‡æ¨™lookerå†å¾€å‰æŒ‡ï¼Œæ‰æ˜¯æˆ‘å€‘å‰›å‰›æ‰¾åˆ°çš„å€¼
 		}
 		locn = looker;
-		return 1;  //¦³§ä¨ì 
+		return 1;  //æœ‰æ‰¾åˆ° 
 	}
 	else{
 		locn = looker;
-		return 0; //¨S¦³§ä¨ì 
+		return 0; //æ²’æœ‰æ‰¾åˆ° 
 	}
 	
 }

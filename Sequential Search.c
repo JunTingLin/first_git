@@ -3,8 +3,8 @@
 int locn ;
 int main(void){
 	int A[6] = {34,23,37,64,12,3}; 
-	printf("¦³µL§ä¨ì:%d\n",SeqSearch(A,5,15));
-	printf("³Ì«á¦blocn=%dªº¯Á¤Þ\n",locn);
+	printf("æœ‰ç„¡æ‰¾åˆ°:%d\n",SeqSearch(A,5,15));
+	printf("æœ€å¾Œåœ¨locn=%dçš„ç´¢å¼•\n",locn);
 	system("pause");
 	return 0;
 }
@@ -16,10 +16,10 @@ int SeqSearch(int list[], int lastIndex, int target){
 	}
 	locn =  looker;
 	if(target == list[looker]){
-		return 1;  //¦³§ä¨ì 
+		return 1;  //æœ‰æ‰¾åˆ° 
 	}
 	else{
-		return 0; //¨S¦³§ä¨ì 
+		return 0; //æ²’æœ‰æ‰¾åˆ° 
 	}
 }
 
