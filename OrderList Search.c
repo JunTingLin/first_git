@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<stdlib.h>
-//ÀH«K¶Ã¥´
-//{34,23,37,64,12,3}->­ì¼Æ¦C 
+//éš¨ä¾¿äº‚æ‰“
+//{34,23,37,64,12,3}->åŽŸæ•¸åˆ— 
 int locn ;
 int main(void){
 	int A[6] = {3,12,23,34,37,64,1000,1000};
-	printf("¦³µL§ä¨ì:%d\n",OrderListSearch(A,5,12));
-	printf("³Ì«á¦blocn=%dªº¯Á¤Þ\n",locn);
+	printf("æœ‰ç„¡æ‰¾åˆ°:%d\n",OrderListSearch(A,5,12));
+	printf("æœ€å¾Œåœ¨locn=%dçš„ç´¢å¼•\n",locn);
 	system("pause");
 	return 0;
 }
 int OrderListSearch(int list[], int lastIndex, int target){
 	int looker;
-	if(target<list[lastIndex]){  //target¬O§_¤p©ó³Ì«á¤@­Ó¼Æ 
+	if(target<list[lastIndex]){  //targetæ˜¯å¦å°æ–¼æœ€å¾Œä¸€å€‹æ•¸ 
 		looker = 0;
 		while(target>list[looker]){
 			looker += 1;
